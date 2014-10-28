@@ -635,29 +635,6 @@
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         NSMutableArray * listaProducto = [ConexionBD consultaProducto];
         Producto = [listaProducto objectAtIndex:0];
         

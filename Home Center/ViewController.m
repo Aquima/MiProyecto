@@ -79,11 +79,7 @@
             [request addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-type"];
             NSURLConnection * conexion = [[NSURLConnection alloc]initWithRequest:request delegate:self];
             acumulaDatos = [[NSMutableData alloc]init];
-            
-            
-            
-            
-            
+
             NSMutableString * parametrosWS = [[NSMutableString alloc]init];
             [parametrosWS appendFormat:[NSString stringWithFormat:@"<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ws=\"http://ws.saps.advante.cl/\"><soapenv:Header/><soapenv:Body><ws:Localizacion><token>aa28ffad0c2a5d9f39576f7ae53c3fef</token><Lat>%@</Lat><Lon>%@</Lon></ws:Localizacion></soapenv:Body></soapenv:Envelope>", latitud, longitud]];
             
@@ -211,7 +207,7 @@
                             validaWS = 1;
                         } else {
                             UIAlertView * alerta = [[UIAlertView alloc]initWithTitle:@"Homecenter" message:auxTextWS delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil];
-                            [alerta show];
+                        //    [alerta show];
                         }
                         break;
                     }

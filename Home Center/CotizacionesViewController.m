@@ -169,9 +169,12 @@
         NSNumberFormatter * formater = [[NSNumberFormatter alloc]init];
         formater.numberStyle = NSNumberFormatterDecimalStyle;
         NSNumber * number = [[NSNumber alloc]initWithDouble:Cotizacion.Precio.doubleValue];
-        NSMutableString * preci0 = [formater stringFromNumber:number];
-        NSMutableString * numeroMostrar = [preci0 stringByReplacingOccurrencesOfString:@"," withString:@"."];
-        
+        NSMutableString * preci0;
+        [preci0 appendString:[formater stringFromNumber:number]];
+        //= [formater stringFromNumber:number];
+        NSMutableString * numeroMostrar;
+        //= [preci0 stringByReplacingOccurrencesOfString:@"," withString:@"."];
+        [numeroMostrar appendString:[preci0 stringByReplacingOccurrencesOfString:@"," withString:@"."]];
         lblPrecio.text = [NSString stringWithFormat:@"$ %@", numeroMostrar];
         
         //UIButton * btnEditar = (UIButton *)[cell viewWithTag:600];

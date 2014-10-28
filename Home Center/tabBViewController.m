@@ -36,15 +36,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    UIStoryboard*currentStoryBoard;
     ConexionBD = [[bd alloc]init];
-
-    EscanearViewController* myController1 = [self.storyboard instantiateViewControllerWithIdentifier:@"viewEscaneo"];
-    CarritoViewController* myController2 = [self.storyboard instantiateViewControllerWithIdentifier:@"viewCarrito"];
-    CotizacionesViewController* myController3 = [self.storyboard instantiateViewControllerWithIdentifier:@"viewMisCotizaciones"];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        // The device is an iPad running iOS 3.2 or later.
+       currentStoryBoard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle:nil];
+    }
+    else
+    {
+        // The device is an iPhone or iPod touch.
+        currentStoryBoard = [UIStoryboard storyboardWithName:@"Main"
+                                                      bundle:NULL];
+    }
+    EscanearViewController* myController1 = [currentStoryBoard instantiateViewControllerWithIdentifier:@"viewEscaneo"];
+    CarritoViewController* myController2 = [currentStoryBoard instantiateViewControllerWithIdentifier:@"viewCarrito"];
+    CotizacionesViewController* myController3 = [currentStoryBoard instantiateViewControllerWithIdentifier:@"viewMisCotizaciones"];
     //PedidosViewController * myController4 = [self.storyboard instantiateViewControllerWithIdentifier:@"viewPedidos"];
-    UbicacionViewController * myController4 = [self.storyboard instantiateViewControllerWithIdentifier:@"viewUbicacion"];
-    MasViewController* myController5 = [self.storyboard instantiateViewControllerWithIdentifier:@"viewMas"];
+    UbicacionViewController * myController4 = [currentStoryBoard instantiateViewControllerWithIdentifier:@"viewUbicacion"];
+    MasViewController* myController5 = [currentStoryBoard instantiateViewControllerWithIdentifier:@"viewMas"];
     //ConsultasViewController * myController4 = [self.storyboard instantiateViewControllerWithIdentifier:@"consultasVC"];
     
     NSArray *array = [NSArray arrayWithObjects: myController1, myController2, myController3, myController4, myController5, nil];

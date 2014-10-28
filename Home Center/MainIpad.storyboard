@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Video View Controller-->
+        <scene sceneID="ttR-2I-bSf">
+            <objects>
+                <viewController storyboardIdentifier="viewVideo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aN0-2d-zcd" customClass="VideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20i-D3-oc2"/>
+                        <viewControllerLayoutGuide type="bottom" id="FMS-gc-RRV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d6L-Gi-y8U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLi-n3-tMJ">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcb-2u-d5Z">
+                                <rect key="frame" x="414" y="20" width="46" height="30"/>
+                                <state key="normal" title="Saltar">
+                                    <color key="titleColor" red="0.0039215688589999999" green="0.55294120309999995" blue="0.77254909279999995" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.0039215688589999999" green="0.55294120309999995" blue="0.77254909279999995" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saltarVideo:" destination="aN0-2d-zcd" eventType="touchUpInside" id="n7x-Tx-bFP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="webView" destination="eLi-n3-tMJ" id="tny-HW-nPa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3r8-0u-mLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="1513"/>
+        </scene>
+    </scenes>
+</document>

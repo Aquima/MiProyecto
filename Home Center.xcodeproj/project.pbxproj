@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B48FCF3519FF07DE00600BEC /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B48FCF3419FF07DE00600BEC /* Location.gpx */; };
+		B48FCF3719FF330400600BEC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48FCF3619FF330400600BEC /* Main_iPad.storyboard */; };
+		B48FCF6E19FF345600600BEC /* MainIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48FCF6D19FF345600600BEC /* MainIpad.storyboard */; };
+		B48FCF7019FF377D00600BEC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B48FCF6F19FF377D00600BEC /* Default-568h@2x.png */; };
 		ED01C2911995120400282DEB /* ico_tc.png in Resources */ = {isa = PBXBuildFile; fileRef = ED01C2901995120400282DEB /* ico_tc.png */; };
 		ED01C29719951E9700282DEB /* btn_edit_corr.png in Resources */ = {isa = PBXBuildFile; fileRef = ED01C29219951E9700282DEB /* btn_edit_corr.png */; };
 		ED01C29919951E9700282DEB /* btn_mis_comp.png in Resources */ = {isa = PBXBuildFile; fileRef = ED01C29419951E9700282DEB /* btn_mis_comp.png */; };
@@ -144,6 +147,9 @@
 
 /* Begin PBXFileReference section */
 		B48FCF3419FF07DE00600BEC /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		B48FCF3619FF330400600BEC /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		B48FCF6D19FF345600600BEC /* MainIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIpad.storyboard; sourceTree = "<group>"; };
+		B48FCF6F19FF377D00600BEC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ED01C2901995120400282DEB /* ico_tc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_tc.png; sourceTree = "<group>"; };
 		ED01C29219951E9700282DEB /* btn_edit_corr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_edit_corr.png; sourceTree = "<group>"; };
 		ED01C29419951E9700282DEB /* btn_mis_comp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_mis_comp.png; sourceTree = "<group>"; };
@@ -411,6 +417,7 @@
 		ED5633FB192BABAE00E1BC8C = {
 			isa = PBXGroup;
 			children = (
+				B48FCF6F19FF377D00600BEC /* Default-568h@2x.png */,
 				B48FCF3419FF07DE00600BEC /* Location.gpx */,
 				ED56340D192BABAE00E1BC8C /* Home Center */,
 				ED56342C192BABAF00E1BC8C /* Home CenterTests */,
@@ -455,6 +462,7 @@
 		ED56340D192BABAE00E1BC8C /* Home Center */ = {
 			isa = PBXGroup;
 			children = (
+				B48FCF6D19FF345600600BEC /* MainIpad.storyboard */,
 				EDD49575198C41C70042E7AD /* miso-bold.otf */,
 				EDD49576198C41C70042E7AD /* miso-light.otf */,
 				EDD49577198C41C70042E7AD /* miso.otf */,
@@ -525,6 +533,7 @@
 				ED56340E192BABAE00E1BC8C /* Supporting Files */,
 				ED662EDB193D96CD009F518B /* tabBViewController.h */,
 				ED662EDC193D96CD009F518B /* tabBViewController.m */,
+				B48FCF3619FF330400600BEC /* Main_iPad.storyboard */,
 			);
 			path = "Home Center";
 			sourceTree = "<group>";
@@ -642,6 +651,7 @@
 				ED9F77EA1989736300AB9315 /* cargador02.png in Resources */,
 				EDEC5B43193AD51B00B7A49C /* btn_encuentra_sku.png in Resources */,
 				ED43ACA31986AEC70055DF61 /* agregar_cotizar.png in Resources */,
+				B48FCF3719FF330400600BEC /* Main_iPad.storyboard in Resources */,
 				EDC1CC961948A42200A84636 /* btn-masNuevo.png in Resources */,
 				EDB27BC3195157D900931AF8 /* mira3.png in Resources */,
 				EDDC5B1319948B560024C8F1 /* logo_final1.jpg in Resources */,
@@ -658,6 +668,7 @@
 				ED01C29719951E9700282DEB /* btn_edit_corr.png in Resources */,
 				ED1EA07B199D174300B2E8DD /* revisa_video.png in Resources */,
 				ED662EBF193D37FB009F518B /* bg-campo-correo.png in Resources */,
+				B48FCF6E19FF345600600BEC /* MainIpad.storyboard in Resources */,
 				ED64558C193C565D0032E1CA /* btn-eliminar.png in Resources */,
 				EDEC5B38193AD0F400B7A49C /* btn-escanear.png in Resources */,
 				B48FCF3519FF07DE00600BEC /* Location.gpx in Resources */,
@@ -674,6 +685,7 @@
 				ED1EA069199D14ED00B2E8DD /* ayuda_carrito.png in Resources */,
 				ED01C29A19951E9700282DEB /* btn_ver_tc.png in Resources */,
 				ED563412192BABAE00E1BC8C /* InfoPlist.strings in Resources */,
+				B48FCF7019FF377D00600BEC /* Default-568h@2x.png in Resources */,
 				EDEC5B3A193AD0F400B7A49C /* btn-mis-compras.png in Resources */,
 				EDD4957A198C41C70042E7AD /* miso.otf in Resources */,
 				ED9F77EB1989736300AB9315 /* cargador03.png in Resources */,
@@ -882,6 +894,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Home Center/Home Center-Prefix.pch";
 				INFOPLIST_FILE = "Home Center/Home Center-Info.plist";
@@ -907,6 +920,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Home Center/Home Center-Prefix.pch";
 				INFOPLIST_FILE = "Home Center/Home Center-Info.plist";

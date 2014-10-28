@@ -58,9 +58,9 @@
         vistaCargando.hidden = NO;
         NSMutableString * parametros = [[NSMutableString alloc]init];
         [parametros appendFormat:@"<?xml version=\"1.0\" encoding=\"UTF-8\"?><SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"http://ws.saps.advante.cl/\"><SOAP-ENV:Body><ns1:misCompras>"];
-        [parametros appendFormat:[NSString stringWithFormat:@"<token>aa28ffad0c2a5d9f39576f7ae53c3fef</token><email>%@</email></ns1:misCompras></SOAP-ENV:Body></SOAP-ENV:Envelope>", CORREO]];
+        [parametros appendString:[NSString stringWithFormat:@"<token>aa28ffad0c2a5d9f39576f7ae53c3fef</token><email>%@</email></ns1:misCompras></SOAP-ENV:Body></SOAP-ENV:Envelope>", CORREO]];
         
-        NSLog(parametros);
+    //    NSLog(parametros);
         
         NSURL * url = [[NSURL alloc] initWithString:@"http://10.23.18.250:9080/SAPSOmnicanalWSTomcat/AdministrarCotizaciones?wsdl"];
         
@@ -124,7 +124,7 @@
         NSNumberFormatter * formater = [[NSNumberFormatter alloc]init];
         formater.numberStyle = NSNumberFormatterDecimalStyle;
         NSNumber * number = [[NSNumber alloc]initWithDouble:[NSString stringWithFormat:@"%@", [listaPrecio objectAtIndex:indexPath.row]].doubleValue];
-        NSMutableString * preci0 = [formater stringFromNumber:number];
+        NSString * preci0 = [formater stringFromNumber:number];
         NSString * numeroMostrar = [preci0 stringByReplacingOccurrencesOfString:@"," withString:@"."];
         
         UILabel * lblNombre = (UILabel*)[cell viewWithTag:200];
