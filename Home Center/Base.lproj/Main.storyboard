@@ -2252,7 +2252,7 @@ Productos</string>
         <image name="ico_tc.png" width="15" height="13"/>
         <image name="inspiracion.png" width="249" height="43"/>
         <image name="lapiz.png" width="35" height="35"/>
-        <image name="left_arrow.png" width="378" height="597"/>
+        <image name="left_arrow.png" width="25" height="40"/>
         <image name="logo_final1.jpg" width="635" height="76"/>
         <image name="mensaje_carritov2.png" width="1333" height="524"/>
         <image name="mensaje_cotizaciones.png" width="1333" height="524"/>
